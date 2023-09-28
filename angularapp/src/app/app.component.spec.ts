@@ -8,13 +8,13 @@ describe('AppComponent', () => {
     declarations: [AppComponent]
   }));
 
-  it(`should have as title 'Stylish Calculator App'`, () => {
+  it('should have as title Stylish Calculator App', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Stylish Calculator App');
   });
 
-  it('should render the title in an <h1> element', () => {
+  it('should render the title in an h1 element', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('My Calculator App');
@@ -26,5 +26,4 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('router-outlet')).toBeTruthy();
   });
 
-  // Add more test cases as needed
 });
